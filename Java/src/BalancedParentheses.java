@@ -75,7 +75,7 @@ public class BalancedParentheses {
 
     public static void main(String[] args)
     {
-        String expr = "([{}])";
+        String expr = "";
 
         // Function call
         if (areParenthesesBalanced(expr))
