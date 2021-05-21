@@ -1,4 +1,4 @@
-package LinkedListProblem;
+package LinkedListImlementation;
 
 
 public class Runner {

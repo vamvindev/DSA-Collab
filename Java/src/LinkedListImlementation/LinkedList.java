@@ -1,4 +1,4 @@
-package LinkedListProblem;
+package LinkedListImlementation;
 
 
 public class LinkedList {
@@ -6,7 +6,7 @@ public class LinkedList {
     Node head;
 
     public void insert(int data){
-        LinkedListProblem.Node node = new LinkedListProblem.Node() {
+        LinkedListImlementation.Node node = new LinkedListImlementation.Node() {
             Node node = new Node();
         };
     }

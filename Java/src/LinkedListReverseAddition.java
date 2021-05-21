@@ -1,7 +1,6 @@
-package LinkedListProblem;
+import LinkedListImlementation.LinkedList;
 import org.w3c.dom.Node;
 
-import java.util.LinkedList;
 import java.util.List;
 
 /*
@@ -17,7 +16,7 @@ Explanation: 342 + 465 = 807.
 */
 
 
-class LinkedListReverseAddition{
+public class LinkedListReverseAddition{
 
     //head of the list
     Node head;
@@ -31,22 +30,23 @@ class LinkedListReverseAddition{
             next = null;
         }//constructor
     }
-
+    // This function prints contents of linked list starting from head
     public void printList(){
         Node n = head;
-        while ( n !=null){
+        while (n !=null){
             System.out.println(n.data+" ");
             n = n.next;
         }
     }
 
-
    //Method to create a SLL with three nodes
     public static void main(String[] args) {
 
-        //Creating two LinkedLists
-        LinkedList l1 = new LinkedList();
-        LinkedList l2 = new LinkedList();
+        //Starting with two empty LinkedLists
+
+
+        LinkedListReverseAddition l1 = new LinkedListReverseAddition();
+        LinkedListReverseAddition l2 = new LinkedListReverseAddition();
 
         l1.head = new Node(1);
         Node l1Second = new Node(2);
@@ -57,17 +57,19 @@ class LinkedListReverseAddition{
         //Link second node to the third node
         l1Second.next = l1Third;
 
+        l1.printList();
+
         //Adding integers to the linkedLists using add()
-        l1.add(2);
-        l1.add(4);
-        l1.add(3);
-        l2.add(5);
-        l2.add(6);
-        l2.add(4);
+//        l1.add(2);
+//        l1.add(4);
+//        l1.add(3);
+//        l2.add(5);
+//        l2.add(6);
+//        l2.add(4);
 
         //Printing out the list
-        System.out.println("The list l1 has these elements: "+l1);
-        System.out.println("The list l1 has these elements: "+l2);
+//        System.out.println("The list l1 has these elements: "+l1);
+//        System.out.println("The list l1 has these elements: "+l2);
 
     }
 }
