@@ -41,4 +41,5 @@ class Solution(object):
 x = Solution()
 print(x.twoSum([2, 9, 4, 6, 1], 3))
 print(x.twoSum([-1, 3, -44, 3, 10], 6))
+print(x.twoSum([3,2,4], 6))
 
