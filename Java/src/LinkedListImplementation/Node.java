@@ -1,9 +1,7 @@
-package LinkedListImlementation;
+package LinkedListImplementation;
 
 public class Node {
-
     int data;
     Node next;
-
-
+    int index;
 }

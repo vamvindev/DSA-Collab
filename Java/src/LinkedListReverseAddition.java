@@ -1,8 +1,3 @@
-import LinkedListImlementation.LinkedList;
-import org.w3c.dom.Node;
-
-import java.util.List;
-
 /*
 You are given two linked-lists representing two non-negative integers. 
 The digits are stored in reverse order and each of their nodes contain a single digit. 
@@ -16,60 +11,51 @@ Explanation: 342 + 465 = 807.
 */
 
 
+import java.util.LinkedList;
+import java.util.ListIterator;
+
 public class LinkedListReverseAddition{
 
-    //head of the list
-    Node head;
-
-    //Linked List Node. This inner class is static so that main() can access it
-    static class Node{
-        int data;
-        Node next;
-        Node(int d){
-            data = d;
-            next = null;
-        }//constructor
-    }
-    // This function prints contents of linked list starting from head
-    public void printList(){
-        Node n = head;
-        while (n !=null){
-            System.out.println(n.data+" ");
-            n = n.next;
-        }
-    }
-
-   //Method to create a SLL with three nodes
     public static void main(String[] args) {
 
         //Starting with two empty LinkedLists
-
-
-        LinkedListReverseAddition l1 = new LinkedListReverseAddition();
-        LinkedListReverseAddition l2 = new LinkedListReverseAddition();
-
-        l1.head = new Node(1);
-        Node l1Second = new Node(2);
-        Node l1Third = new Node(3);
-
-        //Link first node to the second node
-        l1.head.next = l1Second;
-        //Link second node to the third node
-        l1Second.next = l1Third;
-
-        l1.printList();
-
+        LinkedList l1 = new LinkedList();
+        LinkedList l2 = new LinkedList();
         //Adding integers to the linkedLists using add()
-//        l1.add(2);
-//        l1.add(4);
-//        l1.add(3);
-//        l2.add(5);
-//        l2.add(6);
-//        l2.add(4);
+        l1.add(2);
+        l1.add(4);
+        l1.add(3);
+        l2.add(5);
+        l2.add(6);
+        l2.add(4);
 
-        //Printing out the list
-//        System.out.println("The list l1 has these elements: "+l1);
-//        System.out.println("The list l1 has these elements: "+l2);
+        //Traversing through LLs different approaches
+
+        System.out.println("+++++++Iterative approach++++++");
+        for(int i = 0; i<l1.size();i++){
+            System.out.println(l1.get(i));
+        }System.out.println("-----");
+        for(int j = 0; j<l2.size();j++){
+            System.out.println(l2.get(j));
+        }
+
+        System.out.println("+++++++ListIterator approach++++++");
+        ListIterator listIterator = l1.listIterator();
+        while (listIterator.hasNext()){
+            System.out.println(listIterator.next());
+        }
+        System.out.println("-----");
+        ListIterator listIterator2 = l2.listIterator();
+        while (listIterator2.hasNext()){
+            System.out.println(listIterator2.next());
+        }
+
+        System.out.println("+++++++Java 8 for each approach++++++");
+        l1.forEach(System.out::println);
+        System.out.println("-----");
+        l2.forEach(System.out::println);
+
+        //Reverse traversing
 
     }
 }
