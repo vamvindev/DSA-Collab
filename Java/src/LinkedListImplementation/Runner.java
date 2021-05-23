@@ -33,3 +33,47 @@ public class Runner {
         l1.show(l1.head);
     }
 }
+/*Output
+
+Node Address, printing just for fun: LinkedListImplementation.Node@17f6480
+53
+Node Address, printing just for fun: LinkedListImplementation.Node@2d6e8792
+-100
+Node Address, printing just for fun: LinkedListImplementation.Node@2812cbfa
+18
+Node Address, printing just for fun: LinkedListImplementation.Node@2acf57e3
+143
+Node Address, printing just for fun: LinkedListImplementation.Node@506e6d5e
+0
+Node Address, printing just for fun: LinkedListImplementation.Node@96532d6
+-23
+Node Address, printing just for fun: LinkedListImplementation.Node@3796751b
+-43
+-------Printing the list after deletion------
+Node Address, printing just for fun: LinkedListImplementation.Node@17f6480
+53
+Node Address, printing just for fun: LinkedListImplementation.Node@2d6e8792
+-100
+Node Address, printing just for fun: LinkedListImplementation.Node@2812cbfa
+18
+Node Address, printing just for fun: LinkedListImplementation.Node@506e6d5e
+0
+Node Address, printing just for fun: LinkedListImplementation.Node@96532d6
+-23
+Node Address, printing just for fun: LinkedListImplementation.Node@3796751b
+-43
+Given Linked list
+Node Address, printing just for fun: LinkedListImplementation.Node@17f6480
+53
+Node Address, printing just for fun: LinkedListImplementation.Node@2d6e8792
+-100
+Node Address, printing just for fun: LinkedListImplementation.Node@2812cbfa
+18
+Node Address, printing just for fun: LinkedListImplementation.Node@506e6d5e
+0
+Node Address, printing just for fun: LinkedListImplementation.Node@96532d6
+-23
+Node Address, printing just for fun: LinkedListImplementation.Node@3796751b
+-43
+ */
+
