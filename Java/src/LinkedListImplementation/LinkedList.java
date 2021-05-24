@@ -22,8 +22,6 @@ public class LinkedList {
         return node;
     }
 
-
-
     //insert method for adding elements to the LL
     public void insert(int data) {
         Node node = new Node();
