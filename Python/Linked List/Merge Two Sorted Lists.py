@@ -23,4 +23,18 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
+        dummy = current = ListNode(0)
+
+        while l1 and l2:
+            if l1.val < l2.val:
+                current.next = l1 
+                l1 = l1.next 
+            else:
+                current.next = l2 
+                l2 = l2.next 
+            current = current.next 
         
+        curent.next = l1 or l2 
+        return dummy.next
+x = Solution()
+x.mergeTwoLists([1, 2, 4], [1, 3, 4])
