@@ -22,27 +22,31 @@ class ListNode(object):
 
 class Solution(object):
     def hasCycle(self, head):
-        """
-        :type head: ListNode
-        :rtype: bool
-        """
-        # For this problem, I used the Floyd's Turtle and Hare algorithm.
+        # Used Floyd's hare and tortoise algorithm.
+        # How it works:
+        #   The rabbit starts one node away from the turtle (turtle starts at the head)
+        #   The turtle moves at each node while the rabbit moves faster than the turtle by 2 nodes
+        #   If the turtle and the rabbit encounter at the same position, there's a cycle
 
-        # Set turtle and rabbit to head
-        turtle = head
-        rabbit = head
-        
-        # While the rabbit and turtle are not pointed to none
-        while rabbit != None and turtle != None:
-            
-            # If the rabbit and the turtle are at the same position, this means that there's a cycle, so return true
-            if rabbit == turtle:
-                return True 
-            
-            # If not, make the rabbit move the next two nodes, and the turtle the next node
-            rabbit = rabbit.next.next
-            turtle = turtle.next
-        
-        # If there is no cycle, then return false
-        return False 
 
+        try:
+            # Assign the turtle at the head and the rabbit to the next 
+            turtle = head
+            rabbit = head.next
+            
+            # While the turtle is not at the same position as rabbit,
+            while turtle is not rabbit:
+
+                # Make the turtle move to the next node
+                turtle = turtle.next
+
+                # Make the rabbit move to the next, next node
+                rabbit = rabbit.next.next 
+            
+            # If they meet at the same node, then there's a cycle
+            return True 
+        except:
+
+            # If there is no cycle, then return false.
+            return False
+            
