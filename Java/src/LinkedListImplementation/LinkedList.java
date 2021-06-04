@@ -7,8 +7,7 @@ public class LinkedList {
     Node head;
 
     //Method to reverse a LinkedList
-    Node reverse(Node node)
-    {
+    Node reverse(Node node) {
         Node prev = null;
         Node current = node;
         Node next = null;
@@ -17,9 +16,24 @@ public class LinkedList {
             current.next = prev;
             prev = current;
             current = next;
+            System.out.println(head.data);
         }
         node = prev;
         return node;
+    }
+
+        //Method for printing the elements in the list
+        public void show(Node node){
+        while(node!=null){
+//                System.out.println("Node Address, printing just for fun: "+node);
+            System.out.println(node.data);
+            node = node.next;
+        }
+     }
+
+    //Method to merge LinkedLists
+    void mergeLinkedLists(Node node){
+
     }
 
     //insert method for adding elements to the LL
@@ -82,14 +96,4 @@ public class LinkedList {
             n1 = null;
         }
     }
-
-    //Method for printing the elements in the list
-    public void show(Node node){
-//            Node node = head;
-        while(node!=null){
-                System.out.println("Node Address, printing just for fun: "+node);
-                System.out.println(node.data);
-                node = node.next;
-            }
-        }
 }

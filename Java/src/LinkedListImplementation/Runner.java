@@ -22,14 +22,18 @@ public class Runner {
         l1.insertAt(3,143);
 
         //printing the list
-        l1.show(l1.head);
+//        l1.show(l1.head);
 
         //Deleting the element
-        System.out.println("-------Printing the list after deletion------");
-        l1.deleteAt(3);
-        l1.show(l1.head);
+//        System.out.println("-------Printing the list after deletion------");
+//        l1.deleteAt(3);
+//        l1.show(l1.head);
 
         System.out.println("Given Linked list");
+        l1.show(l1.head);
+
+        System.out.println("Reversed Linked list");
+        l1.reverse(l1.head);
         l1.show(l1.head);
     }
 }
