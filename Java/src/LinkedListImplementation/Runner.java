@@ -37,7 +37,8 @@ public class Runner {
         l1.show(l1.head);
     }
 }
-/*Output
+/*
+Output
 
 Node Address, printing just for fun: LinkedListImplementation.Node@17f6480
 53

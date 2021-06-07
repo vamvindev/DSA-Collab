@@ -1,4 +1,4 @@
-/*
+package Stacks;/*
 Hi, here's your problem today. This problem was recently asked by Uber:
 
 Imagine you are building a compiler. Before running any code, the compiler must check that the parentheses in the program are balanced. Every opening bracket must have a corresponding closing bracket. We can approximate this using strings.
@@ -75,12 +75,31 @@ public class BalancedParentheses {
 
     public static void main(String[] args)
     {
-        String expr = "";
+        String expr = "{(]w)}";
 
         // Function call
+        System.out.println("Input : " + expr);
         if (areParenthesesBalanced(expr))
             System.out.println("Balanced ");
         else
             System.out.println("Not Balanced ");
     }
 }
+
+/*
+Output
+
+
+Input :
+Balanced
+
+Input : {([])}
+Balanced
+
+Input : {(])}
+Not Balanced
+
+Input : {(]w)}
+Not Balanced
+
+ */

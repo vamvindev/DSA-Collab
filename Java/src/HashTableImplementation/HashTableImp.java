@@ -173,7 +173,18 @@ public class HashTableImp {
         }
 
 
+/*
+Output
 
+3
+HashTableImplementation.HashTableImp$Map@5a39699c
+10
+4
+null
+2
+false
+
+ */
 
 
     // Driver method to test Map class

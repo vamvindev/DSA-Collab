@@ -1,3 +1,5 @@
+package Arrays;
+
 import java.util.LinkedList;
 
 public class TwoSums {
@@ -7,7 +9,7 @@ public class TwoSums {
         int[] nums = new int[] {3,2,4};
         int target = 6;
         int i,j;
-
+//TODO : This fails for negative integers. Need to Fix it.
         //parsing through the array ascending order
         for(i=0; i < nums.length;i++) {
 //            System.out.println("Asc. --> The number is " + nums[i] + " and it's index is: " + i);
@@ -21,3 +23,9 @@ public class TwoSums {
         }
     }
 }
+
+/*
+Output
+
+The target is: 6, numbers summing the target are: 2, 4. Their indexes are:[1,2]
+ */
