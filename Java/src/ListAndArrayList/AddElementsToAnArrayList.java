@@ -76,7 +76,32 @@ public class AddElementsToAnArrayList {
         System.out.println("Index ot 3 is : " + primeNumberIndex);
         System.out.println("Prime Numbers List : " + primeNumbers);
     }
-
-
-
 }
+/*
+Output
+
+Is the animals List Empty? false
+Animals List size ist 5
+List has these values : [Lion, Giraffe, Monkey, Elephant, Zebra]
+Get 2nd item : Giraffe
+Removing item 2: Giraffe
+index of Giraffe is : -1 Because it's removed hehe
+Is Lion in the list? : true
+index of Lion is : 0
+The element at index 1 is : Lion
+currItem is : Lion
+currItem is : Monkey
+currItem is : Elephant
+Yea it does have Elephant, and it's index is: 2
+Removed this Elephant from the list
+currItem is : Zebra
+Printing list backwards: Zebra
+Printing list backwards: Monkey
+Printing list backwards: Lion
+Size of the animals list after removal : + 3 List has these values : [Lion, Monkey, Zebra]
+Size of the animals list after clearing : + 0 List has these values : []
+Animals List hashCode 1
+Is 3 ins the list? : false
+Index ot 3 is : 1
+Prime Numbers List : [2, 5, 7, 11]
+ */
