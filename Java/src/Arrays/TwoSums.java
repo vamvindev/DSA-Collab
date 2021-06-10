@@ -6,7 +6,8 @@ public class TwoSums {
 
     public static void main(String[] args) {
 
-        int[] nums = new int[] {3,2,4};
+        int nums[] = new int[] {3,2,4};
+        int numss[] = new int[] {2,5,3};
         int target = 6;
         int i,j;
 //TODO : This fails for negative integers. Need to Fix it.
