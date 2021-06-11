@@ -1,18 +1,23 @@
 package Arrays;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class TwoSums {
 
     public static void main(String[] args) {
 
-        int nums[] = new int[] {3,2,4};
+        int nums[] = new int[] {0, -1, 2, -3, 1};
         int numss[] = new int[] {2,5,3};
-        int target = 6;
+        int target = -2;
         int i,j;
+        System.out.println("Unsorted Input Array: " +nums);
+        Arrays.stream(nums).sorted();
+
 //TODO : This fails for negative integers. Need to Fix it.
         //parsing through the array ascending order
         for(i=0; i < nums.length;i++) {
+            System.out.println("Sorted Input Array: " +nums[i]);
 //            System.out.println("Asc. --> The number is " + nums[i] + " and it's index is: " + i);
             //parsing through the array descending order
             for (j = i+1; j < nums.length; j++) {
@@ -22,6 +27,7 @@ public class TwoSums {
                 }
             }
         }
+//        System.out.println("The target is: " + target + ", unfortunately there are no combinations that add up to the target.");
     }
 }
 
