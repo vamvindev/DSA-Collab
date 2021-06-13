@@ -9,6 +9,7 @@ The output should be [0, 1].
 Because nums[0] + nums[1] = 2 + 7 = 9.
 */
 
+import javax.swing.tree.TreeNode;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,10 +26,17 @@ public class TwoSumsPrintIndexesHashMap {
         for (int i = 0; i < nums.length; i++){
             int complement = target - nums[i];
             if(printIndexes.containsKey(complement)){
+                System.out.println("Printing HashMap Key and Values in loop: "
+                        + printIndexes.get(nums[i]) +", "
+                        + printIndexes.get(i) + ", "
+                        + printIndexes.get(complement));
                 System.out.println("The target is: " + target + ", numbers adding up to it are: " + complement + ", " + nums[i] +
                         ", their indexes are: " + printIndexes.get(complement) +", " + i);
             }else{
                 printIndexes.put(nums[i], i);
+                System.out.println("Printing HashMap Key and Values: " + printIndexes.get(nums[i]) +", "
+                        + printIndexes.get(i) + ", "
+                        + printIndexes.get(complement));
             }
         }
     }
