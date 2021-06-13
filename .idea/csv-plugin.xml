@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Java/src/HashMap/RunLengthEncoding.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Java/src/HashTableImplementation/HashTableImp.java">
           <value>
             <Attribute>
