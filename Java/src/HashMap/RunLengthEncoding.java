@@ -18,18 +18,18 @@ public class RunLengthEncoding {
 
         String input = "wwwwaaadexxxxxx";
         char[] inputC = input.toCharArray();
-        int counter = 0;
 
         Map<Character, Integer> inputData = new HashMap<>();
 
         for (char c : inputC) {
-            if (input != null) {
+            if (inputC != null) {
                 if (inputData.containsKey(c)) {
+                    int counter = inputData.get(c);
                     counter++;
                     inputData.put(c, counter);
                 } else
                     inputData.put(c, 1);
-            }
+            }else System.out.println("Input is null");
         }
         System.out.println("Encoded Statement: "+inputData);
     }
@@ -38,6 +38,10 @@ public class RunLengthEncoding {
 /*
 Output 1 :
 Encoded Statement: {a=5, d=1, e=1, w=3, x=10}
+
+Output 2 :
+Encoded Statement: {a=3, d=1, e=1, w=4, x=6}
+Values are correct, but not in the expected order
 
 Expected : w4a3d1e1x6
  */
