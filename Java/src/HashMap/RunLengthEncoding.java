@@ -12,11 +12,11 @@ import Trees.BinaryTreeInversion;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RunLengthEncoding {
+public class RunLengthEncoding{
 
     public static void main(String[] args) {
 
-        String input = "wwwwaaadexxxxxx";
+        String input = "wwwwaaadeACDSBBBxxxxxx";
         char[] inputC = input.toCharArray();
 
         Map<Character, Integer> inputData = new HashMap<>();
@@ -42,6 +42,9 @@ Encoded Statement: {a=5, d=1, e=1, w=3, x=10}
 Output 2 :
 Encoded Statement: {a=3, d=1, e=1, w=4, x=6}
 Values are correct, but not in the expected order
+
+Input 3: wwwwaaadeACDSBBBxxxxxx
+Output 3 : {a=3, A=1, B=3, C=1, S=1, d=1, D=1, e=1, w=4, x=6}
 
 Expected : w4a3d1e1x6
  */
