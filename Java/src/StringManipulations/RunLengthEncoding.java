@@ -14,7 +14,7 @@ public class RunLengthEncoding {
     public static void main(String[] args) {
 
 
-        String input = "aaabbbcccdeaaccdedd";
+        String input = "wwwwaaadexxxxxx";
         //checking if string is empty
         if (input.isEmpty()) {
             System.out.println("Empty");
@@ -33,8 +33,18 @@ public class RunLengthEncoding {
             sb.append(counter).append(inputChars[i]);
             String output = sb.toString();
 //            System.out.print(" "+output);
+
+
             System.out.print(counter);
             System.out.print(inputChars[i]);
         }
     }
 }
+
+/*
+Output
+1. 3a3b3c1d1e2a2c1d1e2d
+
+2. 4w3a1d1e6x
+
+ */
