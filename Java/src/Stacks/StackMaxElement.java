@@ -31,5 +31,47 @@ print s.max()
 # 2
  */
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Iterator;
+import java.util.Stack;
+
 public class StackMaxElement {
+
+    static int maxElement(int[] input) {
+
+        Stack<Integer> s = new Stack<>();
+
+
+        for(int i = 0; i < input.length; i++){
+
+            s.push(input[i]);
+
+        }
+
+        int x = s.peek();
+        StackMaxElement maxx = new StackMaxElement();
+
+
+
+
+        return x;
+    }
+
+
+
+    public static void main(String[] args) {
+
+        int[] input = new int[] {1,2,3,2};
+
+        System.out.println("The elements are: " +maxElement(input));
+
+
+
+    }
+
+
+
+
+
 }
