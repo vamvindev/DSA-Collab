@@ -11,7 +11,7 @@ public class RunLengthEncodingNoobWay {
 
     public static void main(String[] args) {
 
-        String input = "wwwwaaadexxxxxx";
+        String input = "wwwwaaadexxxxxxwww";
         char[] inputC = input.toCharArray();
 
 
@@ -31,3 +31,4 @@ public class RunLengthEncodingNoobWay {
 }
 
 //Output : w4a3d1e1x6
+//Running one for loop through the array so Time Complexity = O(n) and Space Complexity is O(1) as everything's in place
