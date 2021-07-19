@@ -39,22 +39,12 @@ import java.util.Stack;
 public class StackMaxElement {
 
     static int maxElement(int[] input) {
-
         Stack<Integer> s = new Stack<>();
-
-
         for(int i = 0; i < input.length; i++){
-
             s.push(input[i]);
-
         }
-
         int x = s.peek();
         StackMaxElement maxx = new StackMaxElement();
-
-
-
-
         return x;
     }
 
@@ -66,12 +56,5 @@ public class StackMaxElement {
 
         System.out.println("The elements are: " +maxElement(input));
 
-
-
     }
-
-
-
-
-
 }

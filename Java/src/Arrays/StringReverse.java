@@ -11,7 +11,7 @@ public class StringReverse {
 
         char[] toArray = input.toCharArray();
 
-        for(int i = toArray.length-1;i >0 ; i--){
+        for(int i = toArray.length-1 ; i >= 0 ; i--){
             System.out.print(toArray[i]);
         }
 
@@ -20,3 +20,5 @@ public class StringReverse {
     }
 
 }
+
+//Output : ?gniod uoy era woh yeH

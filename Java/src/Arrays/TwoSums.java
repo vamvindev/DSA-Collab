@@ -8,7 +8,7 @@ public class TwoSums {
     public static void main(String[] args) {
 
         int nums[] = new int[] {0, -1, 2, -3, 1};
-        int numss[] = new int[] {2,5,3};
+//        int numss[] = new int[] {2,5,3};
         int target = -2;
         int i,j;
         System.out.println("Unsorted Input Array: " +nums);
