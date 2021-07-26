@@ -1,4 +1,4 @@
-package HashMap;
+package Sets;
 /*
 Created by Vamsi on 6/13/21 at 7:03 PM
 
@@ -41,10 +41,7 @@ NO
 
 */
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
-import java.util.Objects;;
 
 public class CompareSubstrings {
 
