@@ -30,18 +30,14 @@ public class ReverseAnInteger {
 
     public static void main(String[] args) {
 
-        int x = 12345;
+        int x = 123;
 
-        String revX = Integer.toString(x);
-
-        System.out.println(revX.length());
-        for(int i = revX.length()-1; i >=0; i--){
-            int result = revX.charAt(i);
-            System.out.println(result);
+        int reversed = 0;
+        while (x > 0){
+            int pop = x%10;
+            x /= 10;
+            reversed = (reversed*10) + pop;
         }
-
-
+        System.out.println(reversed);
     }
-
-
 }

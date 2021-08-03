@@ -22,9 +22,7 @@ public class RunLengthEncodingNoobWay {
             counter++;
             i++;
             }
-            System.out.print(inputC[i]);
-            System.out.print(counter);
-
+            System.out.print(inputC[i]+""+counter);
         }
 
     }
